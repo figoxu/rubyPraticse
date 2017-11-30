@@ -10,14 +10,15 @@ class Customer
 
     @@no_of_customer=0
 
-    def initialize(name)
+    def initialize(name,salary)
         @cust_name=name
+        @cust_salary=salary
     end
 
     def hello
-        puts "Hello,"+@cust_name
+        puts "Hello," + @cust_name + " 's Salary Per Second Is " + @cust_salary
     end
 end
 
-cust = Customer.new("Figo")
+cust = Customer.new("Figo","$1000")
 cust.hello
