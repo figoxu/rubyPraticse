@@ -20,3 +20,11 @@ I said foo.
 foo
 I said bar.
 bar
+
+END {
+    puts " <<< End Of The Program >>> "
+
+}
+BEGIN {
+    puts " >>>  Begin Of The Program   <<< "
+}
