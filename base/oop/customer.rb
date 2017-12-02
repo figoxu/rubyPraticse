@@ -36,3 +36,13 @@ cust.total_no_of_customer()
 cust.total_no_of_customer()
 cust.total_no_of_customer()
 cust.print_global()
+
+def simpleFunc(*params)
+    puts "The number of parameters is #{ params.length }"
+    for i in 0... params.length
+        puts "The parameter is #{ params [i] } @t position #{ i }"
+    end
+end
+
+simpleFunc "Zara", "6", "F"
+simpleFunc( "Mac", "36", "M", "MCA")
