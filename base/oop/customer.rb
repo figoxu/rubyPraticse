@@ -15,10 +15,18 @@ class Customer
         @cust_salary=salary
     end
 
-    def hello
+    def hello()
         puts "Hello," + @cust_name + " 's Salary Per Second Is " + @cust_salary
+    end
+
+    def total_no_of_customer()
+        @@no_of_customer +=1
+        puts "Total number of customers: #@@no_of_customer"
     end
 end
 
 cust = Customer.new("Figo","$1000")
-cust.hello
+cust.hello()
+cust.total_no_of_customer()
+cust.total_no_of_customer()
+cust.total_no_of_customer()
