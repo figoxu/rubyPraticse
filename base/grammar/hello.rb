@@ -28,3 +28,8 @@ END {
 BEGIN {
     puts " >>>  Begin Of The Program   <<< "
 }
+
+
+puts((defined? a))
+puts((defined? test))
+puts((defined? figo)==nil)
