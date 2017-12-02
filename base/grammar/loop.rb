@@ -27,3 +27,17 @@ else
     puts "I can't guess the number"
 end
 
+$i , $num = 0,3
+while $i < $num do
+    puts "Current Loop Value Is i = #$i"
+    $i +=1
+end
+
+$i =0
+
+begin
+    puts "Current Loop <Do While> Value Is i= #$i"
+    $i +=1
+end while $i < $num
+
+
