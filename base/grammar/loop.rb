@@ -40,4 +40,7 @@ begin
     $i +=1
 end while $i < $num
 
-
+for i in 1..5
+    puts "For Loop Value Is i = #$i"
+    $i +=1
+end
