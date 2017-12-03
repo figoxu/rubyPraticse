@@ -7,6 +7,3 @@ module Hello
         print "Hello Ruby!\n"
     end
 end
-
-Hello.hello_python
-Hello.hello_ruby
