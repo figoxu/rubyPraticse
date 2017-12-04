@@ -45,6 +45,13 @@ $ rails g controller posts index show admin_index create edit update destroy
 $ rails g controller comments create destroy 
 $ rails g controller users login logout show update
 ``` 
+# 创建Model
+``` bash
+rails g model User name:string email:string password:string
+rails generate model Post title:string  text:text user:references
+rails g model Comment author:string content:text post:references
+```
+
 
 # Web Site Recommended
 https://gorails.com/episodes/rails-vuejs-trello-clone-part-1?autoplay=1
