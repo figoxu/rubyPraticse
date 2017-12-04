@@ -38,5 +38,13 @@ rails server
 * Rakefile: 保存并加载可在命令行中执行的任务。任务在 Rails 的各组件中定义。如果想添加自己的任务，不要修改这个文件，把任务保存在 lib/tasks 文件夹中。
 * test/ : 单元测试，固件等测试用文件
 
+# 创建Controller
+
+``` bash
+$ rails g controller posts index show admin_index create edit update destroy
+$ rails g controller comments create destroy 
+$ rails g controller users login logout show update
+``` 
+
 # Web Site Recommended
 https://gorails.com/episodes/rails-vuejs-trello-clone-part-1?autoplay=1
