@@ -1,5 +1,5 @@
 # Install Rails
-
+Document https://ruby-china.org/wiki/install_ruby_guide
 ``` bash
 curl -sSL https://get.rvm.io | bash -s stable
 source /Users/xujianhui/.rvm/scripts/rvm
@@ -19,7 +19,24 @@ gem install rails
 
 ``` bash
 rails new blog
+cd blog
+bundle install
+rails server
 ``` 
+
+# 目录说明
+
+* app/ :存放程序的控制器、模型、视图、帮助方法、邮件和静态资源文件。本文主要关注的是这个文件夹。
+* bin/ :存放运行程序的 rails 脚本，以及其他用来部署或运行程序的脚本。
+* config/: 设置程序的路由，数据库等。
+* config.ru : 基于 Rack 服务器的程序设置，用来启动程序。
+* db/ : 存放当前数据库的模式，以及数据库迁移文件。
+* Gemfile, Gemfile.lock : 这两个文件用来指定程序所需的 gem 依赖件，用于 Bundler gem。
+* lib/ : 程序的扩展模块
+* log/ : 程序的日志文件。
+* public/ : 唯一对外开放的文件夹，存放静态文件和编译后的资源文件。
+* Rakefile: 保存并加载可在命令行中执行的任务。任务在 Rails 的各组件中定义。如果想添加自己的任务，不要修改这个文件，把任务保存在 lib/tasks 文件夹中。
+* test/ : 单元测试，固件等测试用文件
 
 # Web Site Recommended
 https://gorails.com/episodes/rails-vuejs-trello-clone-part-1?autoplay=1
