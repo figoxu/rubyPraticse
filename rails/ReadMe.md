@@ -51,6 +51,11 @@ rails g model User name:string email:string password:string
 rails generate model Post title:string  text:text user:references
 rails g model Comment author:string content:text post:references
 ```
+# 创建表结构
+``` bash
+rake db:migrater
+rails dbconsole
+```
 
 
 # Web Site Recommended
