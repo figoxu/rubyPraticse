@@ -1,32 +1,24 @@
 Rails.application.routes.draw do
-  get 'users/login'
+  # 首页
+  root 'posts#index'
+  
+    # 用户相关路由
+    get '/login', to: 'users#login'
+    post '/login', to: 'users#login'
+    post '/logout', to: 'users#logout'
+    get '/profile', to: 'users#show'
+    patch '/profile', to: 'users#update'
+  
+    # 管理员增删改博文路由
+    scope '/admin' do
+      resources :posts, except: [:index, :show]
+    end
+  
+    get '/admin/posts', to: 'posts#admin_index'
+  
+    # 博文评论的路由
+    post '/posts/:id/comments', to: 'comments#create'
 
-  get 'users/logout'
-
-  get 'users/show'
-
-  get 'users/update'
-
-  get 'comments/create'
-
-  get 'comments/destroy'
-
-  get 'posts/index'
-
-  get 'posts/show'
-
-  get 'posts/admin_index'
-
-  get 'posts/create'
-
-  get 'posts/edit'
-
-  get 'posts/update'
-
-  get 'posts/destroy'
-
-  get 'welcome/index'
-  root 'welcome#index'
-
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
