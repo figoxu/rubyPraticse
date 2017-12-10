@@ -57,6 +57,13 @@ rake db:migrater
 rails dbconsole
 ```
 
+# 验证Model
+``` ruby
+rails console
+irb> user = User.new(name: 'q')
+irb> user.valid?
+irb> user.errors.messages
+```
 
 # Web Site Recommended
 https://gorails.com/episodes/rails-vuejs-trello-clone-part-1?autoplay=1
