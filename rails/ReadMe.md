@@ -65,5 +65,12 @@ irb> user.valid?
 irb> user.errors.messages
 ```
 
+
+
+# 安装bootstrap
+rails g bootstrap:install
+rails g bootstrap:layout
+rails g bootstrap:themed Posts
+
 # Web Site Recommended
 https://gorails.com/episodes/rails-vuejs-trello-clone-part-1?autoplay=1
