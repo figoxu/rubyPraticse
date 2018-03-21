@@ -1,5 +1,5 @@
 #创建demo_app项目
-cd /Users/xujianhui/develop/study/ruby/rubyPraticse/rails/p001
+cd /Users/xujianhui/develop/study/ruby/rubyPraticse/rails/demo_app
 rails new demo_app
 cd demo_app/
 bundle install
