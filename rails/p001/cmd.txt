@@ -3,3 +3,5 @@ rails new demo_app
 cd demo_app/
 bundle install
 rails server
+rails generate scaffold User name:string email:string
+
