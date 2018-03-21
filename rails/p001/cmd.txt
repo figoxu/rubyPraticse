@@ -1,8 +1,12 @@
+#创建demo_app项目
 cd /Users/xujianhui/develop/study/ruby/rubyPraticse/rails/p001
 rails new demo_app
 cd demo_app/
 bundle install
 rails server
+
+
+#使用脚手架生成User的代码
 rails generate scaffold User name:string email:string
 
 同步数据库
@@ -11,3 +15,10 @@ bundle exec rake db:migrate
 启动服务
 rails s
 进入 http://localhost:3000/users 使用默认程序
+
+#使用脚手架生成Microposts的代码
+
+rails generate scaffold Micropost content:string user_id:integer
+bundle exec rake db:migrate
+
+rails s
