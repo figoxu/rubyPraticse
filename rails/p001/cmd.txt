@@ -1,2 +1,5 @@
 cd /Users/xujianhui/develop/study/ruby/rubyPraticse/rails/p001
 rails new demo_app
+cd demo_app/
+bundle install
+rails server
