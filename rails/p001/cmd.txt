@@ -5,3 +5,9 @@ bundle install
 rails server
 rails generate scaffold User name:string email:string
 
+同步数据库
+bundle exec rake db:migrate
+
+启动服务
+rails s
+进入 http://localhost:3000/users 使用默认程序
