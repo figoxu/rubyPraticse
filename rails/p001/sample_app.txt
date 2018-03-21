@@ -1,0 +1,2 @@
+rails new sample_app --skip-test-unit
+cd sample_app
