@@ -22,3 +22,11 @@ rails generate scaffold Micropost content:string user_id:integer
 bundle exec rake db:migrate
 
 rails s
+
+#验证one-to-many的配置
+rails console
+first_user = User.first
+first_user.microposts
+
+
+
