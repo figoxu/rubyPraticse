@@ -1,0 +1,36 @@
+# 初始化项目
+rails new sample_app --skip-test-unit
+cd sample_app
+bundle install
+
+# TDD开发
+## 安装Rspect测试用例
+rails generate rspec:install
+rails generate controller StaticPages home help --no-test-framework
+
+# 生成TDD的页面
+rails generate integration_test static_pages
+
+
+
+
+
+
+
+
+
+## 实验撤销controller的指令
+ rails generate controller FooBars baz quux
+ rails destroy  controller FooBars baz quux
+
+## 实验撤销controller的指令
+ rails generate model Foo bar:string baz:integer
+ rails destroy model Foo
+
+## 数据库版本迁移
+rake db:migrate
+rake db:rollback
+rake db:migrate VERSION=0
+
+
+
