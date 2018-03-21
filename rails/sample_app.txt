@@ -1,3 +1,9 @@
+# 初始化项目
 rails new sample_app --skip-test-unit
 cd sample_app
 bundle install
+
+# TDD开发
+## 安装Rspect测试用例
+rails generate rspec:install
+rails generate controller StaticPages home help --no-test-framework
