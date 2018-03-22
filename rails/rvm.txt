@@ -1,0 +1,2 @@
+https://ruby-china.org/wiki/rvm-guide
+rvm管理文档

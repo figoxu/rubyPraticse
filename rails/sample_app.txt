@@ -1,3 +1,5 @@
+rvm use 2.0.0@rails40
+
 # 初始化项目
 rails new sample_app --skip-test-unit
 cd sample_app
