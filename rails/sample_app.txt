@@ -13,14 +13,6 @@ rails generate controller StaticPages home help --no-test-framework
 # 生成TDD的页面
 rails generate integration_test static_pages
 
-
-
-
-
-
-
-
-
 ## 实验撤销controller的指令
  rails generate controller FooBars baz quux
  rails destroy  controller FooBars baz quux
