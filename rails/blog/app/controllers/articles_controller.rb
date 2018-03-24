@@ -1,6 +1,10 @@
 class ArticlesController < ApplicationController
+
+    def index
+        @articles = Article.all
+    end
+
     def new
-        puts "hello new "
     end
 
     def create
