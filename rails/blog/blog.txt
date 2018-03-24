@@ -11,3 +11,7 @@ rvm use 2.3.1@rails510
 #启动服务
 cd /rubyPraticse/rails/blog
 ./bin/rails s
+
+#创建欢迎页
+bin/rails generate controller Welcome index
+访问页面：http://localhost:3000/welcome/index
