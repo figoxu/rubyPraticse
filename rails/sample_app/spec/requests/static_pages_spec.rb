@@ -1,11 +1,10 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe "StaticPages" do
-  describe "GET /static_pages" do
+RSpec.describe "static_pages#home", type: :request do
+  describe "GET static_pages#home" do
     it "works! (now write some real specs)" do
-      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      get static_pages_index_path
-      response.status.should be(200)
+      get '/static_pages/help'
+      expect(response).to have_http_status(200)
     end
   end
 end
