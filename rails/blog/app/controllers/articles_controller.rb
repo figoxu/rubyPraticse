@@ -16,7 +16,16 @@ class ArticlesController < ApplicationController
         redirect_to @article
     end
 
+    def show
+        puts "show method called >>>>>"
+        # puts "id #{params[:id]}"
+        # # puts "id #{ Article.find(params[:id]) }"
+        @article = Article.find(params[:id])
+    end
+
+    private
     def article_params
         params.require(:article).permit(:title, :text)
     end
+
 end
