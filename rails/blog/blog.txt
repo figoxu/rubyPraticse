@@ -1,0 +1,13 @@
+# 向导文档
+http://guides.rubyonrails.org/getting_started.html
+
+# 安装基础环境
+rvm install 2.3.1
+rvm gemset create rails510
+
+#使用rails基础环境
+rvm use 2.3.1@rails510
+
+#启动服务
+cd /rubyPraticse/rails/blog
+./bin/rails s
