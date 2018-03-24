@@ -1,4 +1,4 @@
-rvm use 2.0.0@rails40
+rvm use 2.2.2@rails400
 
 # 初始化项目
 rails new sample_app --skip-test-unit
