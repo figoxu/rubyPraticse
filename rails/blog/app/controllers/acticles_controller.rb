@@ -1,2 +1,0 @@
-class ActiclesController < ApplicationController
-end

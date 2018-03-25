@@ -18,3 +18,6 @@ bin/rails generate controller Welcome index
 
 #配置路由
 bin/rails routes
+
+# 增加第2个模型
+bin/rails generate model Comment commenter:string body:text article:references
