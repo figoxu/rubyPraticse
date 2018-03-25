@@ -1,0 +1,2 @@
+class ActiclesController < ApplicationController
+end
