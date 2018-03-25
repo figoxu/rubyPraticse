@@ -1,0 +1,11 @@
+# 初始化项目环境
+rvm install 2.3.0
+rvm use 2.3.0
+rvm gemset create rails500
+rvm use 2.3.0@rails500
+gem install rails -v 5.0.0
+rails new master_rails_by_actions --skip-bundle --skip-puma --skip-turbolinks -d mysql
+
+#
+
+
