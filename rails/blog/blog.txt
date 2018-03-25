@@ -21,3 +21,5 @@ bin/rails routes
 
 # 增加第2个模型
 bin/rails generate model Comment commenter:string body:text article:references
+
+bin/rails generate controller Comments
