@@ -7,5 +7,16 @@ gem install rails -v 5.0.0
 rails new master_rails_by_actions --skip-bundle --skip-puma --skip-turbolinks -d mysql
 
 #
+使用 rails命令查看 sorcery帮助
+rails g -h
+查看sorcery帮助
+rails g sorcery:install -h
+
+创建默认的模型
+rails g sorcery:install
+安装sorcery子模块
+rails generate sorcery:install user_activation remember_me reset_password --only-submodules
+同步数据库配置
+rails db:migrate
 
 
