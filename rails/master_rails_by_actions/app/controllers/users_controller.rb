@@ -6,8 +6,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params.require(:user).permit(:email,:password,:password_confirmation))
     if @user.save
-      flash[:notice]="注册成功"
-      redirect_to root_path
+      flash[:notice]="注册成功,请登录"
+      redirect_to new_session_path
     else
       render action: :new
     end
