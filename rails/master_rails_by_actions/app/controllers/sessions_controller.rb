@@ -14,4 +14,9 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destory
+    logout
+    flash[:notice]="退出成功"
+    redirect_to root_path
+  end
 end

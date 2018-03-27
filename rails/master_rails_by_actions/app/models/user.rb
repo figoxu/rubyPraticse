@@ -19,6 +19,10 @@ class User < ApplicationRecord
                       if: :need_validate_password
 
 
+  def user_name
+    self.email.split('@').first
+  end
+
   private
   def need_validate_password
     self.new_record? ||
