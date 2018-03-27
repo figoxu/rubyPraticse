@@ -23,3 +23,7 @@ rails db:migrate
 创建默认页
 rails g controller welcome index
 
+生成邮件发送类
+rails g mailer user
+
+
