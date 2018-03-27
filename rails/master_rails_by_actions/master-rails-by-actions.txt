@@ -26,4 +26,10 @@ rails g controller welcome index
 生成邮件发送类
 rails g mailer user
 
-
+# 分类管理
+创建分类模型
+rails g model category
+创建产品模型
+rails g model product
+手写模型的属性
+rails db:migrate
