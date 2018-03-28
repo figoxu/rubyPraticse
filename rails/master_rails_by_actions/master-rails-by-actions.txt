@@ -45,3 +45,6 @@ rails db:migrate
 安装rspec
 rails g rspec:install
 在.rspec配置更多的参数（自己需要的）
+
+执行rspec运行测试用例
+rspec也可以指定具体文件来运行测试用例
