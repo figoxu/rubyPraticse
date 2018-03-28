@@ -14,6 +14,7 @@ module MasterRailsByActions
     #
     #
     #
+    config.autoload_paths += %W[#{Rails.root}/lib]
 
     config.generators do |generator|
       generator.assets false
