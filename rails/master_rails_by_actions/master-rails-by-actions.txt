@@ -33,3 +33,10 @@ rails g model category
 rails g model product
 手写模型的属性
 rails db:migrate
+
+
+
+增加树结构的字符串
+rails g migration add_ancestry_to_category
+编写ancestry字段后，进行数据库移植
+rails db:migrate
