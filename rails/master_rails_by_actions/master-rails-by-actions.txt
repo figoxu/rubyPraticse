@@ -40,3 +40,8 @@ rails db:migrate
 rails g migration add_ancestry_to_category
 编写ancestry字段后，进行数据库移植
 rails db:migrate
+
+
+安装rspec
+rails g rspec:install
+在.rspec配置更多的参数（自己需要的）
