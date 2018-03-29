@@ -4,5 +4,19 @@ class Admin::CategoriesController < Admin::BaseController
   end
 
   def new
+    @category = Category.new
+    @root_categories = Category.roots.order(id: "desc")
   end
+
+  def create
+    @category = Category.new(params.require(:category).permit!)
+    @root_categories = Category.roots.order(id: "desc")
+    if @category.save
+      flash[:notice]="保存成功"
+      redirect_to admin_categories_path
+    else
+      render action: :new
+    end
+  end
+
 end
