@@ -27,6 +27,7 @@ class Admin::CategoriesController < Admin::BaseController
 
   def update
     @category = Category.find(params[:id])
+    @root_categories = Category.roots.order(id: "desc")
     @category.attributes = params.require(:category).permit!
     if @category.save
       flash[:notice] = "修改成功"
