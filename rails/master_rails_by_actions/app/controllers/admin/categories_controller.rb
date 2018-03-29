@@ -37,4 +37,15 @@ class Admin::CategoriesController < Admin::BaseController
     end
   end
 
+  def destroy
+    @category = Category.find(params[:id])
+    if @category.destroy
+      flash[:notice] = "删除成功"
+      redirect_to admin_categories_path
+    else
+      flash[:notice]="删除失败"
+      redirect_to :back
+    end
+  end
+
 end
