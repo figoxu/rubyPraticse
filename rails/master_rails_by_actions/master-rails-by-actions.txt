@@ -48,3 +48,8 @@ rails g rspec:install
 
 执行rspec运行测试用例
 rspec也可以指定具体文件来运行测试用例
+
+
+创建管理系统Controller
+rails g controller admin::sessions new
+rails g controller admin::categories index new
